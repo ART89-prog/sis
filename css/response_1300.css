@@ -1,0 +1,13 @@
+@media print, (max-width: 1300px) {
+
+    .first-section_img {
+        right: -30px;
+    }
+    .last-section_info form {
+        margin-left: 35px;
+    }
+
+
+
+}
+
