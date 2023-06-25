@@ -303,6 +303,8 @@ button {
 
 header {
     background: #efefef;
+    position: relative;
+    z-index: 55;
 }
 header .cont {
     display: flex;
@@ -315,6 +317,7 @@ header .menu {
     justify-content: space-between;
     width: 700px;
     margin-top: 15px;
+    margin-right: 20px;
 }
 
 header .menu .item a {
@@ -330,7 +333,7 @@ header .menu .item a:hover {
     color: #004EF5;
 }
 .header_logo {
-    margin-right: 38px;
+    margin-right: 10px;
 }
 .header_phones {
     display: flex;
@@ -342,6 +345,9 @@ header .menu .item a:hover {
     color: #004EF5;
     font-size: 18px;
     font-weight: 600;
+}
+.header_phone {
+    white-space: nowrap;
 }
 .header_phone + .header_phone {
     margin-top: 4px;
@@ -373,8 +379,10 @@ header .menu .item a:hover {
     width: 100%;
     height: 182px;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     background: url(../images/studio_bg.png);
+    background-size: cover;
+    background-position: center;
     z-index: 2;
 }
 .first-section_wrap {
