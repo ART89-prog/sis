@@ -18,7 +18,7 @@
         min-height: -webkit-fill-available;
         min-height:         fill-available;
         margin: 0;
-        padding: 113px 22px 57px;        
+        padding: 60px 22px 57px;        
         transition: transform .3s linear;
         transform: translateX(-100%);
         background: #fff;
@@ -53,11 +53,168 @@
         top: 27px;
         right: 20px;
         z-index: 999;
-        position: absolute;
     }
     .header_contacts {
-        order: 2;
+        order: 2; 
+        margin-top: 5px;
     }
+    .header_logo {
+        margin-right: 42px;
+    }
+    header .menu .item a {
+        font-size: 18px;
+    }
+    header .menu .item {
+        margin-bottom: 22px;
+    }
+    .first-section_title {
+        font-size: 24px;
+        line-height: 167%;
+        margin-bottom: 121px;
+        max-width: 465px;
+    }
+    .first-section_img {
+        width: 431px;
+        height: 465px;
+        right: -148px;
+        top: -56px;
+    }
+    .first-section .training_items > * {
+        width: calc(100%/2 - 33px);    
+    }
+    .first-section .training_items {
+        flex-wrap: nowrap;
+    }
+    .first-section .training_item:last-child {
+        display: none;
+    }
+    .first-section_bottom {
+        margin-left: 125px;
+    }
+    .studio_title {
+        font-size: 48px;
+    }
+    .studio {
+        padding: 0;
+    }
+    .studio_text {
+        font-size: 24px;
+    }
+    .studio_box:nth-child(2n + 1) .studio_box-img {
+        top: -76px;
+        right: -36px;
+        width: 348px;
+        height: 356px;
+    }
+    .studio_box ul li {
+        font-size: 16px;
+    }
+    .studio_box ul {
+        max-width: 375px;
+    }
+    .studio_box:nth-child(2n) .studio_box-img {
+        left: -50px;
+        top: -20px;
+        width: 350px;
+        height: 363px;
+    }
+    .studio_box:nth-child(2n) ul {
+        max-width: 380px;
+    }
+    .studio_box-title {
+        font-size: 21px;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .interior_text {
+        font-size: 16px;
+    }
+    .training {
+        padding: 158px 0 151px;
+        background-position: 0 48px;
+    }
+    .training_items > * {
+        width: calc(100%/2 - 33px);
+    }
+    .income_item {
+        flex-direction: column;
+    }
+    .income_item .income_item-img {
+        margin-top: 0;
+        margin-left: 0px;
+    }
+    .income_item-info {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .income_item:nth-child(2) .income_item-img {
+        margin-left: 0;
+        margin-top: -60px;
+        width: 365px;
+        height: 373px;
+    }
+    .income_item-price {
+        font-size: 30px;
+    }
+    .income_item:nth-child(2) .income_item-info {
+        margin-left: 0px;
+        margin-top: -50px;
+    }
+    .income_item-title {
+        font-size: 18px;
+    }
+    .income_item {
+        align-items: start;
+    }
+    .vacancy {
+        margin-top: 70px;
+    }
+    .vacancy_item-title {
+        font-size: 22px;
+    }
+    .callback_wrap {
+        flex-direction: column;
+    }
+    .callback_title {
+        margin-bottom: 23px;
+    }
+    .form_title {
+        font-size: 24px;
+        margin-bottom: 33px;
+    }
+    .callback form {
+        margin-right: 0px;
+        max-width: 100%;
+    }
+    .callback_soc {
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+    footer {
+        padding: 140px 0 40px;
+        margin-top: -300px;
+        position: relative;
+    }
+    .footer_left {
+        flex-direction: column;
+    }
+    .footer_box + .footer_box {
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+    .footer_bottom {
+        margin-top: 62px;
+        flex-direction: column;
+    }
+    .footer_copy {
+        margin-bottom: 33px;
+    }
+
+
+
+
+
 
 
     
