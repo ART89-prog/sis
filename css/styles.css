@@ -444,6 +444,71 @@ header .menu .item a:hover {
 
 
 
+.interior {
+}
+.interior_title {
+    margin-bottom: 3px; 
+}
+.interior_text {
+    color: #000;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 30px;
+}
+.interior_item {
+    display: flex;
+    align-items: center;
+}
+.interior_item + .interior_item {
+    margin-top: 30px;
+}
+.interior_item-info {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+    width: 670px;
+    flex-shrink: 0;
+}
+.interior_item:nth-child(1) .interior_item-info {
+    margin-right: 100px;
+}
+.interior_item-icon {
+    border: 10px solid #05F500;
+    width: 150px;
+    height: 150px;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    margin-right: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.interior_item-icon img {
+    transform: rotate(-45deg);
+}
+.interior_item-text {
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 403px;
+    width: 100%;
+    margin-left: 31px;
+}
+.interior_item-images {
+    display: flex;
+    margin-right: -300px;
+}
+
+.interior_item-img {
+    width: 459px;
+    margin-right: 30px;
+}
+.interior_item-img img {
+    width: 100%;
+}
+
+
+
 .training {
     background: url(../images/training_bg.png);
     background-position: center;
@@ -661,6 +726,29 @@ header .menu .item a:hover {
     max-width: 250px;
     width: 100%;
 }
+
+
+
+
+
+.vacancy_item + .vacancy_item {
+    margin-top: 45px;
+}
+.vacancy_item-title {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.vacancy_item-text {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 26px;
+}
+.vacancy .btn {
+    margin-left: 0;
+}
+
 
 
 
