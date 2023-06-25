@@ -504,6 +504,7 @@ header .menu .item a:hover {
     padding: 214px 0 330px;
     margin-top: -179px;
     z-index: 0;
+    position: relative;
 }
 .safety_title {
     margin-bottom: 71px;
@@ -534,32 +535,169 @@ header .menu .item a:hover {
 
 
 
-.callback {
+.income {
+    padding: 200px 0 200px;
 }
-.cont {
+
+
+
+.callback {
+    /* background: url(../images/callback_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 214px 0 330px;
+    margin-top: -279px;
+    z-index: 0; */
+    background: #EFEFEF;
+    /* margin-top: -279px; */
+    z-index: 0;
+    padding: 214px 0 330px;
 }
 .callback_title {
     margin-bottom: 68px;
 }
-.title {
-}
 .callback_wrap {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: -151px;
 }
-.callback_wrap > * {
-    width: calc(100%/2 - 151px);
-    margin-left: 151px;
+.callback form {
+    max-width: 555px;
+    width: 100%;
+    margin-right: 151px;
 }
 .form_title {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 46px;
 }
-.line {
+form .line {
+    margin-bottom: 36px;
 }
-.field {
+form .line .field input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: none;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    font-family: "Unbounded";
+    padding-bottom: 12px;
+}
+form .line .field input::-webkit-input-placeholder {
+    color: #000;
+    font-size: 16px;
+    font-family: "Unbounded";   
+}
+form .line .field input::-moz-placeholder {
+    color: #000;
+    font-size: 16px;
+    font-family: "Unbounded"; 
+}
+form .line .field input:-moz-placeholder {
+    color: #000;
+    font-size: 16px;
+    font-family: "Unbounded";
 }
 .callback .btn {
     margin: 0 0 auto 0;
 }
-.callback_soc {
+.callback_soc a {
+    color: #000;
+    font-size: 21px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+} 
+.callback_soc a + a {
+    margin-top: 17px;
+}
+.callback_soc a:nth-child(1):before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    left: -45px;
+    top: -2px;
+    background: url(../images/telegram.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.callback_soc a:nth-child(2):before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    left: -45px;
+    top: -2px;
+    background: url(../images/whatsapp.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+footer {
+    background: url(../images/footer_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 214px 0 40px;
+    margin-top: -279px;
+    z-index: 0;
+}
+.footer_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_left {
+    display: flex;
+}
+.footer_box + .footer_box {
+    margin-left: 95px;
+}
+.footer_box ul {
+    display: flex;
+}
+.footer_box ul li a {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+}
+.footer_box ul li a img {
+    display: block;
+    margin-right: 9px;
+}
+.footer_box ul li + li {
+    margin-left: 28px;
+}
+.footer_box-title {
+    color: #FFF;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.footer_right a {
+    text-decoration: none;
+    display: block;
+    color: #FFF;
+    font-size: 21px;
+}
+.footer_right a + a {
+    margin-top: 17px;
+}
+.footer_bottom {
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-between;    
+}
+.footer_copy {
+    color: #FFF;
+    font-size: 14px;
+}
+.footer_politic {
+    color: #FFF;
+    font-size: 14px;
 }
