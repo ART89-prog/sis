@@ -20,37 +20,16 @@ $(() => {
 	})
 
 
-	var swiper = new Swiper(".about_sertificat .swiper", {
-		slidesPerView: 3,
-		spaceBetween: 10,
-		loop: true,
-		allowTouchMove: false,
-
-		breakpoints: {
-			0: {
-				spaceBetween: 20,
-				slidesPerView: 3,
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				},
-				centeredSlides: true,
-				allowTouchMove: true
-			},			
-			767: {
-				spaceBetween: 20,
-				slidesPerView: 3
-			},
-			1023: {
-				spaceBetween: 10,
-				slidesPerView: 3
-			}
-		}
-	});
 
 
+	var swiper = new Swiper(".first-section .swiper", {
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+    });
 
-	
+
 
 	// Fancybox
 	Fancybox.defaults.autoFocus = false

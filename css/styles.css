@@ -218,7 +218,7 @@ button {
 
 .cont {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
@@ -357,6 +357,87 @@ header .menu .item a:hover {
 }
 
 
+
+.first-section {
+    background: #efefef;
+}
+.first-section_wrap {
+    display: flex;
+}
+.first-section_info {
+}
+.first-section_title {
+    color: #000;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 60px;  
+    max-width: 616px;
+    margin-bottom: 25px;
+}
+.first-section_title span {
+    color: #004EF5;
+}
+.first-section .btn {
+    margin-left: 0;
+}
+.first-section_img {
+    margin-left: -60px;
+    margin-top: -60px;
+}
+.first-section_bottom {
+    margin-left: 225px;
+    display: flex; 
+    list-style: none;   
+}
+.first-section_bottom li {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500; 
+}
+.first-section_bottom li + li {
+    margin-left: 37px;
+}
+.first-section_bottom li.active {
+    color: #004EF5;
+}
+
+.first-section .training_items {
+    margin-left: -30px;
+    margin-bottom: -30px;   
+}
+.first-section .training_items > * {
+    width: calc(100%/3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.security {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.security_img {
+}
+.security_info {
+    max-width: 362px;
+    width: 100%;
+    margin: 0 5px 0 41px;
+}
+.security_info-title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.security_info-text {
+    color: #000;
+    font-size: 18px;
+}
+.security_info-text p + p {
+    margin-top: 20px;
+}
+
+
+
 .studio {
     background: url(../images/studio_bg.png);
     background-position: center;
@@ -444,8 +525,9 @@ header .menu .item a:hover {
 
 
 
-.interior {
-}
+
+  
+
 .interior_title {
     margin-bottom: 3px; 
 }
@@ -539,6 +621,7 @@ header .menu .item a:hover {
 .training_item-img img {
     border-radius: 10px;
     width: 100%;
+    display: block;
 }
 .training_item-info {
     padding: 0 7px 16px 20px;
