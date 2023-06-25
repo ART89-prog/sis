@@ -1,6 +1,42 @@
 @media (max-width: 479px) {
 
- 
+    .header_logo {
+        margin-right: 5px;
+    }
+    .first-section_title {
+        font-size: 16px;
+    }
+    .first-section_info {
+        margin-top: 26px;
+    }
+    header .menu {
+        top: 100px;
+    }
+    .btn {
+        width: 100%;
+    }
+    .first-section_wrap {
+        margin-bottom: 37px;
+    }
+    .first-section .training_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .first-section .training_items {
+        margin-left: 0;
+    }
+    .first-section .training_item:nth-child(2) {
+        display: none;
+    }
+    .security_info-text {
+        font-size: 14px;
+    }
+    .security_info-title {
+        font-size: 18px;
+    }
+    .first-section_img {
+        top: 75px;
+    }
 
 
 

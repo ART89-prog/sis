@@ -84,6 +84,34 @@ $(() => {
 
 
 
+	var swiper = new Swiper(".interior .swiper", {
+		slidesPerView: 1,
+		spaceBetween: 10,
+		loop: true,
+		allowTouchMove: false,
+
+		breakpoints: {
+			0: {
+				spaceBetween: 20,
+				slidesPerView: 2,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				centeredSlides: true,
+				allowTouchMove: true
+			},			
+			767: {
+				spaceBetween: 0,
+				slidesPerView: 2
+			},
+			1023: {
+				spaceBetween: 0,
+				slidesPerView: 1
+			}
+		}
+	});
+
 
 	// Fancybox
 	Fancybox.defaults.autoFocus = false

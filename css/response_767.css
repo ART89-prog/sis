@@ -1,6 +1,225 @@
 @media print, (max-width: 767px) {
 
+    .header_logo {
+        margin-right: 30px;
+        width: 86px;
+        height: 79px;
+    }
+    .mob_menu_btn span,
+    .close_btn span {
+        display: none;
+    }
+    .header_phone {
+        font-size: 14px;
+    }
+    .header_soc {
+        justify-content: flex-end;
+    }
+    .first-section_title {
+        margin-bottom: 286px;
+    }
+    .first-section_img {
+        width: 290px;
+        height: 319px;
+        right: 50%;
+        top: 115px;
+        transform: translateX(50%);
+    }
+    .security_wrap {
+        flex-direction: column;
+    }
+    .first-section_bottom {
+        margin-left: 0;  
+        margin-top: 30px;  
+    }
+    .security_info-text {
+        margin-bottom: 20px;
+    }
+    header .menu {
+        top: 79px;
+    }
+    .studio_box:nth-child(2n + 1) .studio_box-img {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .studio_box {
+        flex-direction: column-reverse;
+    }
+    .studio_box ul li:before {
+        display: none;
+    }
+    .studio_box ul li {
+        padding-left: 0;
+    }
+    .studio_box ul {
+        max-width: 100%;
+    }
+    .studio_box ul li {
+        font-size: 14px;
+    }
+    .studio_box ul li + li {
+        margin-top: 15px;
+    }
+    .studio_text {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+    .studio_title {
+        font-size: 30px;
+    }
+    .studio_box:nth-child(2n) .studio_box-wrap {
+        margin-left: 0;
+        width: 100%;
+    }
+    .studio_box:nth-child(2n) .studio_box-img {
+        left: 0;
+        top: 0;
+        width: 316px;
+        height: 328px;
+        position: relative;
+    }
+    .studio_box:nth-child(2n) {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .studio_box:nth-child(2n) ul li {
+        padding-left: 0px;
+    }
+    .studio_box-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .studio_box {
+        margin-bottom: 5px;
+    }
+    .studio .btn {
+        margin-top: 27px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .interior {
+        margin-top: 80px;
+    }
+    .interior_text {
+        font-size: 14px;
+    }
+    .interior_item:nth-child(1) .interior_item-info {
+        flex-direction: column;
+    }
+    .interior_item-text {
+        margin-left: 0;
+    }
+    .interior_item-icon {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .interior_item-images {
+        display: none;
+    }
+    .interior_item-info {
+        flex-direction: column;
+    }
+    .interior_item-info {
+        margin: 20px 0;
+    }
+    .interior_item-text {
+        font-size: 14px;
+        margin-left: 1.5;
+    }
+    .training_items {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .training_items > * {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .training_item-text {
+        font-size: 14px;
+    }
+    .training_item + .training_item {
+        margin-top: 20px;
+    }
+    .safety_item {
+        flex-direction: column;
+    }
 
+    .safety_item-text {
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .income_wrap {
+        flex-direction: column;
+    }
+    .income_left {
+        width: 100%;
+    }
+    .income_right {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .income_item .income_item-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .income_title {
+        margin-bottom: 11px;
+    }
+    .income_right {
+        margin-top: 53px;
+    }
+    .income_item:nth-child(2) .income_item-img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .form_title {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .callback_soc a {
+        font-size: 16px;
+    }
+    .footer_box ul {
+        flex-direction: column;
+    }
+    .footer_box ul li + li {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .footer_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer_right {
+        margin-left: 0px;
+        margin-top: 21px;
+    }
+    .footer_bottom {
+        margin-top: 16px;
+    }
+    .footer_copy {
+        margin-bottom: 16px;
+    }
+    footer {
+        position: relative;
+        background: #000;
+    }
+    footer:before {
+        position: absolute;
+        content: "";
+        height: 104px;
+        width: 100%;
+        top: -103px;
+        left: 0;
+        background: url(../images/footer_bg_mob2.png);
+    }
+    footer{
+        padding: 0 0 40px;
+        margin-top: -185px;
+    }
 
 
 
