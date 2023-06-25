@@ -1,10 +1,11 @@
 @media print, (max-width: 1023px) {
- 
+
 
     header .mob_menu_btn {
         display: flex;
         order: 1;
     }
+
     header .menu {
         position: fixed;
         z-index: 666;
@@ -16,9 +17,9 @@
         height: 100%;
         min-height: -moz-available;
         min-height: -webkit-fill-available;
-        min-height:         fill-available;
+        min-height: fill-available;
         margin: 0;
-        padding: 60px 22px 57px;        
+        padding: 60px 22px 57px;
         transition: transform .3s linear;
         transform: translateX(-100%);
         background: #fff;
@@ -27,9 +28,11 @@
         align-content: flex-start;
         flex-wrap: wrap;
     }
+
     header .menu.show {
         transform: translateX(0);
     }
+
     .mob_menu_btn span,
     .close_btn span {
         color: #000;
@@ -38,24 +41,30 @@
         margin-left: 13px;
         display: block;
     }
+
     header .close_btn {
         display: flex;
     }
+
     .menu_open header .mob_menu_btn {
         display: none;
     }
+
     header .menu .item {
         width: 100%;
         margin-right: 0;
         margin-bottom: 16px;
         text-align: center;
     }
-    header .menu .item + .item {
+
+    header .menu .item+.item {
         margin-left: 0;
     }
+
     header .close_btn {
         display: none;
     }
+
     .menu_open header .close_btn {
         display: flex;
         align-items: center;
@@ -63,169 +72,215 @@
         right: 20px;
         z-index: 999;
     }
+
     .header_contacts {
-        order: 2; 
+        order: 2;
         margin-top: 5px;
     }
+
     .header_logo {
         margin-right: 42px;
     }
+
     header .menu .item a {
         font-size: 18px;
     }
+
     header .menu .item {
         margin-bottom: 22px;
     }
+
     .first-section_title {
         font-size: 24px;
         line-height: 167%;
         margin-bottom: 121px;
         max-width: 465px;
     }
+
     .first-section_img {
         width: 431px;
         height: 465px;
         right: -148px;
         top: -56px;
     }
-    .first-section .training_items > * {
-        width: calc(100%/2 - 33px);    
+
+    .first-section .training_items>* {
+        width: calc(100%/2 - 33px);
     }
+
     .first-section .training_items {
         flex-wrap: nowrap;
     }
+
     .first-section .training_item:last-child {
         display: none;
     }
+
     .first-section_bottom {
         margin-left: 125px;
     }
+
     .studio_title {
         font-size: 48px;
     }
+
     .studio {
         padding: 0;
     }
+
     .studio_text {
         font-size: 24px;
     }
+
     .studio_box:nth-child(2n + 1) .studio_box-img {
         top: -76px;
         right: -36px;
         width: 348px;
         height: 356px;
     }
+
     .studio_box ul li {
         font-size: 16px;
     }
+
     .studio_box ul {
         max-width: 375px;
     }
+
     .studio_box:nth-child(2n) .studio_box-img {
         left: -50px;
         top: -20px;
         width: 350px;
         height: 363px;
     }
+
     .studio_box:nth-child(2n) ul {
         max-width: 380px;
     }
+
     .studio_box-title {
         font-size: 21px;
     }
+
     .title {
         font-size: 36px;
     }
+
     .interior_text {
         font-size: 16px;
     }
+
     .training {
         padding: 158px 0 151px;
         background-position: 0 48px;
     }
-    .training_items > * {
+
+    .training_items>* {
         width: calc(100%/2 - 33px);
     }
+
     .income_item {
         flex-direction: column;
     }
+
     .income_item .income_item-img {
         margin-top: 0;
         margin-left: 0px;
     }
+
     .income_item-info {
         margin-left: 0;
         margin-top: 15px;
     }
+
     .income_item:nth-child(2) .income_item-img {
         margin-left: 0;
         margin-top: -60px;
         width: 365px;
         height: 373px;
     }
+
     .income_item-price {
         font-size: 30px;
     }
+
     .income_item:nth-child(2) .income_item-info {
         margin-left: 0px;
         margin-top: -50px;
     }
+
     .income_item-title {
         font-size: 18px;
     }
+
     .income_item {
         align-items: start;
     }
+
     .vacancy {
         margin-top: 70px;
     }
+
     .vacancy_item-title {
         font-size: 22px;
     }
+
     .callback_wrap {
         flex-direction: column;
     }
+
     .callback_title {
         margin-bottom: 23px;
     }
+
     .form_title {
         font-size: 24px;
         margin-bottom: 33px;
     }
+
     .callback form {
         margin-right: 0px;
         max-width: 100%;
     }
+
     .callback_soc {
         margin-top: 40px;
         margin-left: 50px;
     }
+
     footer {
         padding: 200px 0 40px;
         margin-top: -300px;
         position: relative;
     }
+
     .footer_left {
         flex-direction: column;
     }
-    .footer_box + .footer_box {
+
+    .footer_box+.footer_box {
         margin-left: 0px;
         margin-top: 24px;
     }
+
     .footer_bottom {
         margin-top: 62px;
         flex-direction: column;
     }
+
     .footer_copy {
         margin-bottom: 33px;
     }
+
     .security .first-section_title,
     .support .first-section_title {
         display: none;
     }
+
     .support {
         margin-top: 24px;
     }
+
     .safety {
         background: #000;
         background-repeat: no-repeat;
@@ -234,6 +289,7 @@
         z-index: 1;
         position: relative;
     }
+
     .safety:after {
         position: absolute;
         content: "";
@@ -243,6 +299,7 @@
         left: 0;
         background: url(../images/safety_bg_mob.png);
     }
+
     .safety:before {
         position: absolute;
         content: "";
@@ -252,9 +309,11 @@
         left: 0;
         background: url(../images/safety_bg_mob2.png);
     }
+
     .income {
         margin-top: 100px;
     }
+
     .callback {
         background: #EFEFEF;
         background-position: center;
@@ -265,6 +324,7 @@
         margin-top: 150px;
         position: relative;
     }
+
     .callback:after {
         position: absolute;
         content: "";
@@ -274,6 +334,7 @@
         left: 0;
         background: url(../images/callback_bg_mob.png);
     }
+
     .training {
         background: #efefef;
         background-position: center;
@@ -283,6 +344,7 @@
         z-index: 1;
         position: relative;
     }
+
     .training:after {
         position: absolute;
         content: "";
@@ -293,9 +355,11 @@
         background: url(../images/training_bg_mob.png);
         background-size: cover;
     }
+
     .interior {
         margin-top: 125px;
     }
+
     .studio:after {
         position: absolute;
         content: "";
@@ -305,9 +369,11 @@
         left: 0;
         background: url(../images/safety_bg_mob.png);
     }
+
     .first-section:before {
         display: none;
     }
+
     .text_block-title {
         font-size: 30px;
     }
@@ -318,5 +384,5 @@
 
 
 
-    
+
 }
