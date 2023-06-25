@@ -249,8 +249,8 @@ button {
 
 .overlay {
     position: fixed;
-    z-index: 102;
-    top: 0;
+    z-index: 42;
+    top: 123px;
     left: 0;
 
     display: none;
@@ -301,6 +301,44 @@ button {
     Header
 ------------*/
 
+header .mob_menu_btn {
+    display: none;
+    margin-right: 0px;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 8;
+}
+
+header .close_btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 103;
+}
+
+header .close_btn {
+    width: 49px;
+    height: 49px;
+    background: #FFFFFF;
+    opacity: 0.3;
+    border: 1px solid #FFB800;
+    border-radius: 4px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+header .close_btn img {
+    display: block;
+    margin: 0 auto;
+}
 header {
     background: #efefef;
     position: relative;

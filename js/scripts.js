@@ -7,7 +7,24 @@ $(() => {
 	BODY = document.getElementsByTagName('body')[0]
 	OVERLAY = document.querySelector('.overlay')
 
+	// Моб. меню
+	$('header .mob_menu_btn').click((e) => {
+		e.preventDefault()
 
+		$('header .mob_menu_btn').addClass('active')
+		$('body').addClass('menu_open')
+		$('header .menu').addClass('show')
+		$('.overlay').fadeIn(300)
+	})
+
+	$('header .close_btn, header .menu .item a, .overlay').click((e) => {
+		e.preventDefault()
+
+		$('header .mob_menu_btn').removeClass('active')
+		$('body').removeClass('menu_open')
+		$('header .menu').removeClass('show')
+		$('.overlay').fadeOut(300)
+	})
 
 	$('body').on('click', '.modal_link', function (e) {
 		e.preventDefault()
@@ -20,61 +37,50 @@ $(() => {
 	})
 
 
-
-
-	// var swiper = new Swiper(".first-section .swiper", {
-	// 	navigation: {
-	// 		nextEl: ".swiper-button-next",
-	// 		prevEl: ".swiper-button-prev",
-	// 	},
-    // });
-
-
-
 	const firstSliders = [],
-    first = document.querySelectorAll('.first-section .swiper')
+		first = document.querySelectorAll('.first-section .swiper')
 
 	first.forEach(function (el, i) {
-    el.classList.add('first_s' + i)
+		el.classList.add('first_s' + i)
 
-    let options = {
-      loop: false,
-      speed: 500,
-      watchSlidesProgress: true,
-      slideActiveClass: 'active',
-      slideVisibleClass: 'visible',
-	//   autoplay: {
-	// 	delay: 8000,
-	//   },
-      preloadImages: false,
-      lazy: {
-        enabled: true,
-        checkInView: true,
-        loadOnTransitionStart: true,
-        loadPrevNext: true
-      },
-      breakpoints: {
-        0: {
-          spaceBetween: 0,
-          slidesPerView: 1
-        },
-        480: {
-          spaceBetween: 0,
-          slidesPerView: 1
-        },
-        768: {
-          spaceBetween: 0,
-          slidesPerView: 1
-        },
-        1280: {
-          spaceBetween: 0,
-          slidesPerView: 1
-        }
-      },    
-    }
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			//   autoplay: {
+			// 	delay: 8000,
+			//   },
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				},
+				480: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				},
+				768: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				},
+				1280: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				}
+			},
+		}
 
-    firstSliders.push(new Swiper('.first_s' + i, options))
-  })
+		firstSliders.push(new Swiper('.first_s' + i, options))
+	})
 
 
 
