@@ -296,6 +296,18 @@
     .interior {
         margin-top: 125px;
     }
+    .studio:after {
+        position: absolute;
+        content: "";
+        height: 106px;
+        width: 100%;
+        top: -105px;
+        left: 0;
+        background: url(../images/safety_bg_mob.png);
+    }
+    .first-section:before {
+        display: none;
+    }
 
 
 
