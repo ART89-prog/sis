@@ -22,12 +22,60 @@ $(() => {
 
 
 
-	var swiper = new Swiper(".first-section .swiper", {
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-    });
+	// var swiper = new Swiper(".first-section .swiper", {
+	// 	navigation: {
+	// 		nextEl: ".swiper-button-next",
+	// 		prevEl: ".swiper-button-prev",
+	// 	},
+    // });
+
+
+
+	const firstSliders = [],
+    first = document.querySelectorAll('.first-section .swiper')
+
+	first.forEach(function (el, i) {
+    el.classList.add('first_s' + i)
+
+    let options = {
+      loop: false,
+      speed: 500,
+      watchSlidesProgress: true,
+      slideActiveClass: 'active',
+      slideVisibleClass: 'visible',
+	//   autoplay: {
+	// 	delay: 8000,
+	//   },
+      preloadImages: false,
+      lazy: {
+        enabled: true,
+        checkInView: true,
+        loadOnTransitionStart: true,
+        loadPrevNext: true
+      },
+      breakpoints: {
+        0: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        480: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        768: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        1280: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        }
+      },    
+    }
+
+    firstSliders.push(new Swiper('.first_s' + i, options))
+  })
+
 
 
 
