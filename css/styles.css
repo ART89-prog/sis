@@ -515,27 +515,44 @@ header .menu .item a:hover {
     font-size: 36px;
     font-weight: 600;
     z-index: 2;
+    margin-bottom: 157px;
 }
 .studio_box {
     display: flex;
     align-items: center;
+    position: relative;
+    margin-bottom: 270px;
+}
+.studio_box:last-child {
+    margin-bottom: 0;
+}
+.studio_box-wrap {
+    position: relative;
+}
+.studio_box-img {
+    position: absolute;
 }
 .studio_box:nth-child(2n + 1) .studio_box-img {
-    margin-top: -105px;
-    margin-right: -10px;
+    right: -10px;
+    top: -265px;
 }
 .studio_box:nth-child(2n) .studio_box-img {
-    margin-top: -135px;
-    margin-left: -70px;
+    left: -70px;
+    top: -190px;
 }
 .studio_box ul {
     list-style: none;
+    max-width: 497px;
+    width: 100%;
 }
-.studio_box:nth-child(2n + 1) ul {
+/* .studio_box:nth-child(2n + 1) ul {
     margin-top: -60px;
+} */
+.studio_box:nth-child(2n) ul {
+    max-width: 555px;
 }
 .studio_box:nth-child(2n) .studio_box-wrap {
-    margin-top: -65px;
+    margin-left: auto;
 }
 .studio_box ul li {
     position: relative;
@@ -544,7 +561,7 @@ header .menu .item a:hover {
     font-weight: 600;
 }
 .studio_box ul li + li {
-    margin-top: 20px;
+    margin-top: 22px;
 }
 .studio_box ul li:before {
     position: absolute;
@@ -580,7 +597,7 @@ header .menu .item a:hover {
     flex-direction: row-reverse;
 }
 .studio_box:nth-child(2n) ul li {
-    padding-left: 77px;
+    padding-left: 64px;
 }
 .studio_box:nth-child(2n) ul li:before {
     position: absolute;
@@ -592,15 +609,29 @@ header .menu .item a:hover {
     top: 50%;
     transform: translateY(-50%);
 }
-
+.studio .btn {
+    margin-top: 80px;
+    z-index: 5;
+    position: relative;
+}
+.title {
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 43px;
+}
 
 
 
 
   
-
+.interior {
+    margin-top: 187px;
+    margin-bottom: 27px;
+}
 .interior_title {
-    margin-bottom: 3px; 
+    margin-bottom: 18px; 
 }
 .interior_text {
     color: #000;
@@ -611,6 +642,7 @@ header .menu .item a:hover {
 .interior_item {
     display: flex;
     align-items: center;
+    margin-left: 32px;
 }
 .interior_item + .interior_item {
     margin-top: 30px;
@@ -670,13 +702,6 @@ header .menu .item a:hover {
     padding: 214px 0 151px;
     z-index: 1;
     position: relative;
-}
-.title {
-    color: #000;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 30px;
-    margin-bottom: 43px;
 }
 .training_items {
     margin-left: -33px;
