@@ -308,6 +308,9 @@
     .first-section:before {
         display: none;
     }
+    .text_block-title {
+        font-size: 30px;
+    }
 
 
 

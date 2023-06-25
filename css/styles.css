@@ -1240,3 +1240,34 @@ footer {
 .footer_politic a:hover {
     color: #004EF5;
 }
+
+.text_block {
+    margin-top: 33px;
+    margin-bottom: 350px;
+}
+.text_block-title {
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.67;
+}
+.text_block h2 {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.text_block p {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.text_block p a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+}
