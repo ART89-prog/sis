@@ -650,12 +650,12 @@ header .menu .item a:hover {
 .interior_item-info {
     display: flex;
     align-items: center;
-    margin-right: 45px;
+    margin-right: -65px;
     width: 670px;
     flex-shrink: 0;
 }
 .interior_item:nth-child(1) .interior_item-info {
-    margin-right: 100px;
+    margin-right: -15px;
 }
 .interior_item-icon {
     border: 10px solid #05F500;
@@ -690,6 +690,7 @@ header .menu .item a:hover {
 }
 .interior_item-img img {
     width: 100%;
+    display: block;
 }
 
 
@@ -745,7 +746,7 @@ header .menu .item a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 214px 0 330px;
+    padding: 206px 0 280px;
     margin-top: -179px;
     z-index: 0;
     position: relative;
@@ -770,9 +771,12 @@ header .menu .item a:hover {
 .safety_item-text {
     color: #FFF;
     font-size: 18px;
-    max-width: 202px;
+    max-width: 221px;
     width: 100%;
     margin-left: 30px;
+}
+.safety_item-img {
+    margin-left: -25px;
 }
 
 
@@ -780,11 +784,12 @@ header .menu .item a:hover {
 
 
 .income {
-    padding: 200px 0 200px;
+    margin-bottom: 32px;
 }
 .income_wrap-radio {
     display: flex;
-    margin-top: 26px;
+    margin-top: 28px;
+    margin-left: 12px;
 }
 .income_wrap-radio div + div {
     margin-left: 35px;
@@ -830,16 +835,17 @@ header .menu .item a:hover {
     transition: opacity .2s linear;
     opacity: 0;
     border: none;
-    border: 10px solid green;
+    border: 10px solid #06F402;
 }
 .income input:checked + label:after {
     opacity: 1; 
 }
 .income_title {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 .income_wrap {
     display: flex;
+    justify-content: space-between;
 }
 .income_left {
     width: calc(100% - 380px);
@@ -855,11 +861,12 @@ header .menu .item a:hover {
     align-items: center;
 }
 .income_item:nth-child(2) .income_item-img {
-    margin-left: -125px;
-    margin-top: -80px;
+    margin-left: -115px;
+    margin-top: -63px;
 }
 .income_item-info {
     margin-left: 97px;
+    margin-top: -35px;
 }
 .income_item:nth-child(2) .income_item-info {
     margin-left: 21px;
@@ -882,7 +889,9 @@ header .menu .item a:hover {
     font-weight: 300;
 }
 .income_right {
-    width: 335px;
+    width: 364px;
+    flex-shrink: 0;
+    padding-left: 40px;
 }
 .income_box {
     margin-bottom: 38px;
@@ -905,11 +914,23 @@ header .menu .item a:hover {
     max-width: 250px;
     width: 100%;
 }
+.income_item .income_item-img {
+    margin-top: -20px;
+    margin-left: 16px;
+}
+.income_box-title.mb6 {
+    margin-bottom: 6px;
+}
+.income .btn {
+    margin-left: -10px;
+}
 
 
 
 
-
+.vacancy_title {
+    margin-bottom: 30px;
+}
 .vacancy_item + .vacancy_item {
     margin-top: 45px;
 }
@@ -933,17 +954,13 @@ header .menu .item a:hover {
 
 
 .callback {
-    /* background: url(../images/callback_bg.png);
+    background: url(../images/callback_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 214px 0 330px;
-    margin-top: -279px;
-    z-index: 0; */
-    background: #EFEFEF;
-    /* margin-top: -279px; */
+    padding: 188px 0 330px;
     z-index: 0;
-    padding: 214px 0 330px;
+    margin-top: 0px;
 }
 .callback_title {
     margin-bottom: 68px;
@@ -999,7 +1016,11 @@ form .line .field input:-moz-placeholder {
     text-decoration: none;
     display: block;
     position: relative;
+    transition: all .4s;
 } 
+.callback_soc a:hover {
+    color: #004EF5;
+}
 .callback_soc a + a {
     margin-top: 17px;
 }
@@ -1091,4 +1112,13 @@ footer {
 .footer_politic {
     color: #FFF;
     font-size: 14px;
+}
+.footer_politic a {
+    color: #FFF;
+    font-size: 14px; 
+    text-decoration: none;
+    transition: all .4s;
+}
+.footer_politic a:hover {
+    color: #004EF5;
 }
