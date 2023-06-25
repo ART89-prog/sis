@@ -591,6 +591,77 @@ header .menu .item a:hover {
 .income input:checked + label:after {
     opacity: 1; 
 }
+.income_title {
+    margin-bottom: 20px;
+}
+.income_wrap {
+    display: flex;
+}
+.income_left {
+    width: calc(100% - 380px);
+}
+.income_wrap-title {
+    color: #000;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 21px;
+}
+.income_item {
+    display: flex;
+    align-items: center;
+}
+.income_item:nth-child(2) .income_item-img {
+    margin-left: -125px;
+    margin-top: -80px;
+}
+.income_item-info {
+    margin-left: 97px;
+}
+.income_item:nth-child(2) .income_item-info {
+    margin-left: 21px;
+}
+.income_item-title {
+    color: #000;
+    font-size: 21px;
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+.income_item-price {
+    color: #000;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+.income_item-col {
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+}
+.income_right {
+    width: 335px;
+}
+.income_box {
+    margin-bottom: 38px;
+}
+.income_box-title {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.income_box-summa {
+    color: #000;
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+.income_box-text {
+    color: #B2B2B2;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 28px;
+    max-width: 250px;
+    width: 100%;
+}
+
 
 
 
