@@ -91,7 +91,16 @@ $(() => {
 		breakpoints: {
 			0: {
 				spaceBetween: 0,
-				slidesPerView: 1				
+				slidesPerView: 1,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+					clickable: true
+				}				
 			},	
 			479: {
 				spaceBetween: 20,
