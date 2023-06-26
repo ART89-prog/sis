@@ -88,17 +88,19 @@ $(() => {
 		slidesPerView: 2,
 		spaceBetween: 20,
 		loop: true,
-		// allowTouchMove: false,
-
 		breakpoints: {
 			0: {
-				spaceBetween: 20,
-				slidesPerView: 2,
+				spaceBetween: 0,
+				slidesPerView: 1,
 				pagination: {
 					el: ".swiper-pagination",
 					clickable: true,
 				}
-			},			
+			},	
+			479: {
+				spaceBetween: 20,
+				slidesPerView: 2
+			},		
 			767: {
 				spaceBetween: 20,
 				slidesPerView: 2

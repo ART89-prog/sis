@@ -309,10 +309,14 @@
     .interior_slider {
         display: block;
     }
+    
     .interior_slider .swiper-slide img {
         width: 100%;
     }
 
+    .interior {
+        margin-bottom: 155px;
+    }
 
 
 
