@@ -91,15 +91,20 @@ $(() => {
 		breakpoints: {
 			0: {
 				spaceBetween: 0,
-				slidesPerView: 1,
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				}
+				slidesPerView: 1				
 			},	
 			479: {
 				spaceBetween: 20,
-				slidesPerView: 2
+				slidesPerView: 2,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+					clickable: true
+				}
 			},		
 			767: {
 				spaceBetween: 20,
