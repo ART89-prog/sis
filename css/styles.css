@@ -434,7 +434,7 @@ header .menu .item a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 2;
+    z-index: 0;
 }
 
 .first-section_wrap {
@@ -573,6 +573,7 @@ header .menu .item a:hover {
 .security_img {
     width: 370px;
     height: 382px;
+    flex-shrink: 0;
 }
 
 .security_img img {
@@ -1458,4 +1459,44 @@ footer {
 
 .interior_slider {
     display: none;
+}
+
+
+.first-section .swiper-pagination {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 345px);
+    width: auto !important;
+    right: auto !important;
+    margin: 0;
+    display: flex;  
+    z-index: 9999;  
+    position: relative;
+}
+.first-section .swiper-pagination-bullet {
+	padding: 0;
+	border-radius: 0;
+	width: auto;
+    height: auto;
+	text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-family: "Unbounded";
+    font-weight: 500;
+	opacity: 1;
+    background: none;
+}
+.first-section .swiper-pagination-bullet-active {
+    color: #004EF5;
+    font-size: 16px;
+    font-family: "Unbounded";
+    font-weight: 500;
+}
+.first-section .swiper-pagination-bullet:hover, 
+.first-section .swiper-pagination-bullet.active {
+    background: none;
+    box-shadow: none;
+}
+.first-section .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 34px !important;
 }

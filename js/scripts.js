@@ -37,6 +37,10 @@ $(() => {
 	})
 
 
+
+
+
+	var menu = ['Начни', 'Полезно', 'Безопасно']
 	const firstSliders = [],
 		first = document.querySelectorAll('.first-section .swiper')
 
@@ -44,14 +48,19 @@ $(() => {
 		el.classList.add('first_s' + i)
 
 		let options = {
+			pagination: '.pag-shoes',
 			loop: false,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			//   autoplay: {
-			// 	delay: 8000,
-			//   },
+			pagination: {
+				el: '.swiper-pagination',
+					  clickable: true,
+				  renderBullet: function (index, className) {
+					return '<span class="' + className + '">' + (menu[index]) + '</span>';
+				  },
+			  },
 			preloadImages: false,
 			lazy: {
 				enabled: true,
@@ -81,6 +90,9 @@ $(() => {
 
 		firstSliders.push(new Swiper('.first_s' + i, options))
 	})
+
+
+
 
 
 
