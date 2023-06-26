@@ -84,11 +84,11 @@ $(() => {
 
 
 
-	var swiper = new Swiper(".interior .swiper", {
-		slidesPerView: 1,
-		spaceBetween: 10,
+	var swiper = new Swiper(".interior_slider .swiper", {
+		slidesPerView: 2,
+		spaceBetween: 20,
 		loop: true,
-		allowTouchMove: false,
+		// allowTouchMove: false,
 
 		breakpoints: {
 			0: {
@@ -97,17 +97,15 @@ $(() => {
 				pagination: {
 					el: ".swiper-pagination",
 					clickable: true,
-				},
-				centeredSlides: true,
-				allowTouchMove: true
+				}
 			},			
 			767: {
-				spaceBetween: 0,
+				spaceBetween: 20,
 				slidesPerView: 2
 			},
 			1023: {
-				spaceBetween: 0,
-				slidesPerView: 1
+				spaceBetween: 20,
+				slidesPerView: 2
 			}
 		}
 	});

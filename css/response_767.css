@@ -296,6 +296,23 @@
         font-size: 14px;
     }
 
+    .callback form .line {
+        flex-direction: column;
+    }
+    .callback form .line .field {
+        width: 100%;
+    }
+    .income_right:before {
+        display: none;
+    }
+
+    .interior_slider {
+        display: block;
+    }
+    .interior_slider .swiper-slide img {
+        width: 100%;
+    }
+
 
 
 

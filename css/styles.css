@@ -548,11 +548,11 @@ header .menu .item a:hover {
     margin-top: 20px;
 }
 
-.swiper {
+.first-section .swiper {
     overflow: visible !important;
 }
 
-.swiper-slide {
+.first-section .swiper-slide {
     position: relative;
     visibility: hidden;
     width: auto;
@@ -561,7 +561,7 @@ header .menu .item a:hover {
     opacity: 0;
 }
 
-.swiper-slide.visible {
+.first-section .swiper-slide.visible {
     visibility: visible;
     pointer-events: auto;
     opacity: 1;
@@ -932,7 +932,7 @@ header .menu .item a:hover {
     background-size: cover;
     padding: 206px 0 280px;
     margin-top: -179px;
-    z-index: 0;
+    z-index: 1;
     position: relative;
 }
 
@@ -1057,6 +1057,7 @@ header .menu .item a:hover {
     font-size: 21px;
     font-weight: 500;
     margin-bottom: 21px;
+    position: relative;
 }
 
 .income_item {
@@ -1121,6 +1122,18 @@ header .menu .item a:hover {
     width: 364px;
     flex-shrink: 0;
     padding-left: 40px;
+    position: relative;
+}
+
+.income_right:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 1500px);
+    height: calc(100% + 165px);
+    background: #f8f8f8;
+    top:-225px;
+    left: 0;
+    z-index: 0;
 }
 
 .income_box {
@@ -1131,12 +1144,14 @@ header .menu .item a:hover {
     color: var(--text_color);
     font-size: 16px;
     margin-bottom: 16px;
+    position: relative;
 }
 
 .income_box-summa {
     color: var(--text_color);
     font-size: 36px;
     margin-bottom: 6px;
+    position: relative;
 }
 
 .income_box-text {
@@ -1146,6 +1161,7 @@ header .menu .item a:hover {
     margin-bottom: 28px;
     max-width: 250px;
     width: 100%;
+    position: relative;
 }
 
 .income_box-title.mb6 {
@@ -1154,6 +1170,7 @@ header .menu .item a:hover {
 
 .income .btn {
     margin-left: -10px;
+    position: relative;
 }
 
 
@@ -1437,4 +1454,8 @@ footer {
     color: var(--text_color);
     font-size: 16px;
     line-height: 1.5;
+}
+
+.interior_slider {
+    display: none;
 }

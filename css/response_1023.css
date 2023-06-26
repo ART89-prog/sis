@@ -378,6 +378,14 @@
         font-size: 30px;
     }
 
+    .callback form .line {
+        display: flex;
+        justify-content: space-between;
+    }
+    .callback form .line .field {
+        width: 49%;
+    }
+
 
 
 
