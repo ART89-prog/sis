@@ -132,6 +132,7 @@
 
     .interior_text {
         font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .interior_item:nth-child(1) .interior_item-info {
@@ -161,7 +162,7 @@
 
     .interior_item-text {
         font-size: 14px;
-        margin-left: 1.5;
+        margin-top: 20px;
     }
 
     .training_items {
@@ -179,9 +180,6 @@
         font-size: 14px;
     }
 
-    .training_item+.training_item {
-        margin-top: 20px;
-    }
 
     .safety_item {
         flex-direction: column;
@@ -353,6 +351,25 @@
         font-size: 14px;
         font-family: "Unbounded";
         line-height: 21px;
+    }
+
+    .first-section .swiper-pagination {
+        left: calc(50% - 130px);
+    }
+    .first-section .training_item-text {
+        font-size: 16px;
+    }
+    .first-section .security_info {
+        margin: 0 5px 0 0px;
+    }
+    .first-section .security_info-text {
+        font-size: 14px;
+    }
+    .income_wrap-radio {
+        justify-content: flex-start;
+    }
+    .income .btn {
+        margin-left: 0;
     }
 
 

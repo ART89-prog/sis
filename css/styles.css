@@ -828,7 +828,6 @@ header .menu .item a:hover {
 
 .interior_item-img {
     width: 459px;
-    height: 297px;
 }
 
 .interior_item-img+.interior_item-img {
@@ -848,7 +847,7 @@ header .menu .item a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 214px 0 151px;
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 
@@ -906,7 +905,8 @@ header .menu .item a:hover {
 .training_item-info {
     padding: 0 7px 16px 20px;
     background: #fff;
-
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .training_item-title {
@@ -981,6 +981,7 @@ header .menu .item a:hover {
 
 .income_wrap-radio {
     display: flex;
+    justify-content: space-between;
     margin-top: 28px;
     margin-left: 12px;
 }
@@ -1170,7 +1171,6 @@ header .menu .item a:hover {
 }
 
 .income .btn {
-    margin-left: -10px;
     position: relative;
 }
 
@@ -1211,7 +1211,7 @@ header .menu .item a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 188px 0 330px;
+    padding: 188px 0 255px;
     z-index: 0;
     margin-top: 0px;
 }

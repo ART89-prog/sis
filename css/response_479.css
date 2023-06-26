@@ -48,6 +48,9 @@
     .first-section_img {
         top: 75px;
     }
+    .first-section .swiper-pagination {
+        left: 20px;
+    }
 
 
 
